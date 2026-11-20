@@ -208,3 +208,57 @@ footer {
   }
 }
 
+
+/* Literary Georgia typography */
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+h1, h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 31px;
+}
+
+h2 {
+  font-size: 19px;
+}
+
+.brand {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 15px;
+}
+
+nav {
+  font-family: Georgia, serif;
+  font-size: 12px;
+}
+
+.quote {
+  margin-top: 42px;
+  max-width: 520px;
+}
+
+.quote p {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.9;
+  color: #244c7e;
+}
+
+.quote-source {
+  font-size: 11px;
+  color: #54749a;
+  font-style: normal;
+}
+
+
