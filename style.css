@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
 
 :root {
   --background: #b2c9e6;
@@ -368,5 +368,44 @@ body,
   font-size: 10px;
   margin-top: 9px;
   color: #778392;
+}
+
+/* Cute, soft typography */
+body,
+.site,
+.site h1,
+.site h2,
+.site p,
+.site a,
+.site nav,
+.site footer,
+.site span {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+}
+
+.site h1 {
+  font-size: 31px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+.site h2 {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.site p {
+  font-weight: 400;
+}
+
+/* Keep the Steinbeck quote literary */
+.site .favorite-quote,
+.site .favorite-quote span {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #687584;
 }
 
