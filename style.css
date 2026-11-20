@@ -234,4 +234,12 @@ footer {
     justify-content: center;
   }
 }
+.profile-photo {
+  display: block;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto 24px;
+}
 
