@@ -163,3 +163,48 @@ footer {
   }
 }
 
+/* INTRO: TEXT LEFT, PHOTO RIGHT */
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 34px;
+  text-align: left;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.intro-text h1,
+.intro-text p {
+  text-align: left;
+}
+
+.profile-photo {
+  display: block;
+  width: 160px;
+  height: 160px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0;
+}
+
+/* MOBILE */
+@media (max-width: 500px) {
+  .intro {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .profile-photo {
+    width: 140px;
+    height: 140px;
+  }
+}
+
