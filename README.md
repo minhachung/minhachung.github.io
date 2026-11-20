@@ -1,4 +1,4 @@
-## Hi there 👋
+"Well, here's your box. Nearly everything I have is in it, and it is not full. Pain and excitement are in it, and feeling good or bad and evil thoughts and good thoughts—the pleasure of design and some despair and the indescribable joy of creation. And on top of these are all the gratitude and love I have for you. And still the box is not full."
 
 <!--
 **minhachung/minhachung** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
