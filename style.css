@@ -261,4 +261,27 @@ nav {
   font-style: normal;
 }
 
+/* Literary typography */
+h1, h2 {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+}
 
+.favorite-quote {
+  font-family: Georgia, serif;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.8;
+  color: #294b73;
+  margin: 12px 0 22px;
+  padding: 0;
+  border: none;
+}
+
+.favorite-quote span {
+  display: block;
+  margin-top: 8px;
+  font-size: 10px;
+  opacity: 0.75;
+}
