@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 :root {
   --background: #b2c9e6;
@@ -409,3 +409,43 @@ body,
   color: #687584;
 }
 
+
+/* Refined, slightly soft typography */
+body,
+.site,
+.site h1,
+.site h2,
+.site p,
+.site a,
+.site nav,
+.site footer,
+.site span {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+}
+
+.site h1 {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+}
+
+.site h2 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.site p {
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+/* Keep the Steinbeck quote in Georgia */
+.site .favorite-quote,
+.site .favorite-quote span {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #687584;
+}
