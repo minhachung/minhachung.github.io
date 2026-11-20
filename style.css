@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap');
 
 :root {
-  --cream: #dce8f0;
-  --blue: #526e89;
-  --dark: #293f54;
-  --muted: #647e94;
-  --light-blue: #cbdce9;
-  --blush: #f1eae7;
-  --line: #b9ccda;
+  --cream: #9DBCE0;
+  --blue: #244D85;
+  --dark: #142E50;
+  --muted: #385F8B;
+  --light-blue: #B5CBE8;
+  --blush: #D9DFF0;
+  --line: #7097C4;
 }
 
 * {
@@ -306,4 +306,16 @@ footer {
   .elsewhere-item {
     transition: none;
   }
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+body {
+  background-color: #dce8f0;
+  color: #293f54;
 }
