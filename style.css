@@ -1,18 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap');
 
-/* COLOR PALETTE */
 :root {
   --background: #B2C9E6;
   --navy: #152F50;
   --blue: #234C80;
   --muted: #456B96;
   --panel: #D4E2F3;
-  --panel-alt: #C5D8EE;
   --border: #91B0D5;
 }
 
-/* BASE */
 * {
   box-sizing: border-box;
 }
@@ -26,13 +23,13 @@ body {
   background: var(--background);
   color: var(--navy);
   font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
-  line-height: 1.65;
+  font-size: 12.5px;
+  line-height: 1.5;
 }
 
 .page {
-  width: min(760px, 88%);
-  margin: 0 auto;
+  width: min(650px, 90%);
+  margin: auto;
 }
 
 a {
@@ -42,91 +39,76 @@ a {
 
 p {
   color: var(--blue);
-  margin: 0 0 12px;
-  max-width: 620px;
+  margin: 0 0 8px;
 }
 
 /* NAVIGATION */
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  padding: 22px 0;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 0;
   border-bottom: 1px solid var(--border);
 }
 
 .logo {
-  font-size: 14px;
   font-weight: 600;
+  font-size: 12px;
   white-space: nowrap;
 }
 
 .nav-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 17px;
+  gap: 11px;
 }
 
 .nav-links a {
-  font-size: 11px;
   color: var(--blue);
-  transition: color 0.2s;
+  font-size: 10px;
 }
 
-.nav-links a:hover {
-  color: var(--navy);
-}
-
-/* TYPOGRAPHY */
+/* HEADINGS */
 h1, h2, h3 {
   font-family: 'DM Serif Display', serif;
   font-weight: 400;
 }
 
 h1 {
-  font-size: clamp(30px, 4.5vw, 42px);
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-  margin: 10px 0 18px;
+  font-size: 30px;
+  line-height: 1.1;
+  margin: 5px 0 12px;
 }
 
 h2 {
-  font-size: 27px;
-  line-height: 1.2;
-  margin: 0 0 17px;
+  font-size: 21px;
+  margin: 0 0 10px;
 }
 
 h3 {
-  font-size: 20px;
-  line-height: 1.25;
-  margin: 0 0 9px;
+  font-size: 16px;
+  margin: 0 0 5px;
 }
 
 .eyebrow,
 .section-number {
   color: var(--muted);
-  font-size: 10px;
-  letter-spacing: 1.3px;
+  font-size: 9px;
+  letter-spacing: 0.8px;
 }
 
 .section-number {
-  margin-bottom: 13px;
-}
-
-.small-note {
-  color: var(--muted);
-  font-size: 12px;
-  margin-top: 17px;
+  margin-bottom: 7px;
 }
 
 /* HERO */
 .hero {
-  padding: 48px 0 55px;
+  padding: 28px 0 30px;
 }
 
 .hero .intro {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .hero p {
@@ -135,57 +117,59 @@ h3 {
 
 .text-link {
   display: inline-block;
-  margin-top: 13px;
-  padding-bottom: 3px;
+  margin-top: 7px;
   border-bottom: 1px solid var(--blue);
-  color: var(--navy);
-  font-size: 12px;
+  font-size: 11px;
 }
 
 /* SECTIONS */
 section {
-  padding: 38px 0;
   border-top: 1px solid var(--border);
+  padding: 20px 0;
 }
 
-/* RESEARCH */
+.small-note {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 10px;
+}
+
+/* INTERESTS */
 .interest-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  margin-top: 19px;
+  gap: 8px;
+  margin-top: 12px;
 }
 
 .interest-card {
   background: var(--panel);
-  border: 1px solid rgba(35, 76, 128, 0.08);
-  padding: 18px;
-  border-radius: 5px;
+  padding: 11px;
+  border-radius: 3px;
 }
 
 .interest-card h3 {
-  font-size: 19px;
+  font-size: 15px;
 }
 
 .interest-card p {
-  font-size: 12px;
-  margin-bottom: 0;
+  font-size: 10.5px;
+  margin: 0;
 }
 
-/* BUILDING */
+/* PROJECTS */
 .project {
   background: var(--panel);
-  border: 1px solid rgba(35, 76, 128, 0.08);
-  border-radius: 5px;
-  padding: 20px;
+  padding: 13px;
+  border-radius: 3px;
 }
 
 .project-heading {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 8px;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
 }
 
 .project-heading h3 {
@@ -193,124 +177,89 @@ section {
 }
 
 .project p {
+  font-size: 11px;
   margin: 0;
-  font-size: 13px;
 }
 
 .status {
-  background: var(--background);
-  color: var(--blue);
+  font-size: 9px;
+  padding: 3px 8px;
   border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 4px 10px;
-  font-size: 10px;
+  border-radius: 12px;
   white-space: nowrap;
 }
 
 /* BOOKS */
 .book-list {
-  margin-top: 17px;
+  margin-top: 9px;
 }
 
 .book {
   display: flex;
   justify-content: space-between;
-  gap: 18px;
-  padding: 12px 0;
+  gap: 12px;
+  padding: 8px 0;
   border-bottom: 1px solid var(--border);
 }
 
 .book span:last-child {
-  font-size: 12px;
+  font-size: 10.5px;
   color: var(--muted);
-  text-align: right;
 }
 
 /* ELSEWHERE */
 .elsewhere-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  gap: 8px;
 }
 
 .elsewhere-item {
-  padding: 18px;
   background: var(--panel);
-  border-radius: 5px;
-}
-
-.elsewhere-item:nth-child(even) {
-  background: var(--panel-alt);
+  padding: 11px;
+  border-radius: 3px;
 }
 
 .elsewhere-item h3 {
-  font-size: 19px;
+  font-size: 15px;
 }
 
 .elsewhere-item p {
-  font-size: 12px;
-  margin-bottom: 0;
+  font-size: 10.5px;
+  margin: 0;
 }
 
 /* CONTACT */
 .social-links {
   display: flex;
-  gap: 22px;
-  margin-top: 16px;
-  font-size: 12px;
-  color: var(--navy);
-}
-
-.social-links a:hover {
-  text-decoration: underline;
+  gap: 14px;
+  margin-top: 9px;
+  font-size: 11px;
 }
 
 /* FOOTER */
 footer {
   border-top: 1px solid var(--border);
-  padding: 22px 0 30px;
+  padding: 14px 0 20px;
   display: flex;
   justify-content: space-between;
-  gap: 15px;
+  font-size: 10px;
   color: var(--muted);
-  font-size: 11px;
-}
-
-/* SUBTLE HOVER EFFECTS */
-.interest-card,
-.project,
-.elsewhere-item {
-  transition: transform 0.2s ease;
-}
-
-.interest-card:hover,
-.project:hover,
-.elsewhere-item:hover {
-  transform: translateY(-2px);
 }
 
 /* MOBILE */
-@media (max-width: 650px) {
-  .page {
-    width: 90%;
-  }
-
+@media (max-width: 600px) {
   .navbar {
-    align-items: flex-start;
     flex-direction: column;
-    gap: 12px;
-  }
-
-  .nav-links {
-    gap: 12px;
+    align-items: flex-start;
   }
 
   .hero {
-    padding: 38px 0 43px;
+    padding: 24px 0;
   }
 
   section {
-    padding: 30px 0;
+    padding: 18px 0;
   }
 
   .interest-grid {
@@ -322,30 +271,13 @@ footer {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 400px) {
   .elsewhere-grid {
     grid-template-columns: 1fr;
   }
 
   .book {
     flex-direction: column;
-    gap: 3px;
-  }
-
-  .book span:last-child {
-    text-align: left;
+    gap: 2px;
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  .interest-card,
-  .project,
-  .elsewhere-item {
-    transition: none;
-  }
-}
-
