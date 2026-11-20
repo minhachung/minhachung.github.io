@@ -1,172 +1,131 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#B2C9E6">
+  <meta name="theme-color" content="#b2c9e6">
+
   <title>minha chung</title>
-  <link rel="stylesheet" href="style.css?v=4">
+
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 
 <body>
-  <div class="page">
-    <nav class="navbar">
-      <a class="logo" href="#home">minha chung</a>
-      <div class="nav-links">
+
+  <div class="site">
+
+    <!-- NAVIGATION -->
+    <header class="top">
+      <a class="brand" href="#home">minha chung</a>
+
+      <nav>
         <a href="#about">about</a>
-        <a href="#research">curiosities</a>
+        <a href="#interests">interests</a>
         <a href="#building">building</a>
-        <a href="#books">bookshelf</a>
         <a href="#elsewhere">elsewhere</a>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-    <main>
-      <header id="home" class="hero">
-        <p class="eyebrow">a little corner of the internet</p>
+
+    <main id="home">
+
+      <!-- INTRODUCTION -->
+      <div class="intro">
         <h1>hi, i'm minha.</h1>
-        <p class="intro">
-          i'm a student at duke university who likes
-          mathematics, hockey, books, and japanese pop culture.
-        </p>
-        <p>
-          i'm curious about the future of technology,
-          the things we build, and what makes us human.
-        </p>
-        <a class="text-link" href="#about">a little more about me ↗</a>
-      </header>
 
-      <section id="about">
-        <p class="section-number">01 / about</p>
-        <h2>a little about me.</h2>
         <p>
-          i'm minha, a hockey player, avid reader,
-          and a huge dodgers and anaheim ducks fan.
+          i'm a student at duke university interested
+          in mathematics, technology, and what makes us human.
         </p>
+
         <p>
+          outside of that, i play hockey, read,
+          and spend a lot of time thinking about
+          the anaheim ducks and the dodgers.
+        </p>
+      </div>
+
+
+      <!-- ABOUT -->
+      <section id="about">
+        <h2>a little about me</h2>
+
+        <p>
+          i speak korean, japanese, english, and spanish.
           i love coffee, energy drinks, açaí bowls,
           doraemon, and akb48 — especially watanabe mayu.
         </p>
+      </section>
+
+
+      <!-- INTERESTS -->
+      <section id="interests">
+        <h2>things i think about</h2>
+
         <p>
-          i speak korean, japanese, english, and spanish.
-          i also love talking about mathematics, books,
-          and ai ethics and safety.
+          ergodic theory, graph theory, mcmc,
+          and ai ethics and safety — especially
+          how technology changes our relationship
+          with responsibility.
         </p>
       </section>
 
-      <section id="research">
-        <p class="section-number">02 / curiosities</p>
-        <h2>things i think about.</h2>
-        <p>some mathematical topics i'm especially interested in:</p>
 
-        <div class="interest-grid">
-          <article class="interest-card">
-            <h3>ergodic theory</h3>
-            <p>dynamics, long-term behavior, and mathematical structure.</p>
-          </article>
-
-          <article class="interest-card">
-            <h3>graph theory</h3>
-            <p>networks, connections, and discrete structures.</p>
-          </article>
-
-          <article class="interest-card">
-            <h3>mcmc</h3>
-            <p>randomness, sampling, and probabilistic computation.</p>
-          </article>
-        </div>
-
-        <p class="small-note">
-          i'm also interested in ai ethics and safety,
-          particularly technology and human responsibility.
-        </p>
-      </section>
-
+      <!-- PROJECTS -->
       <section id="building">
-        <p class="section-number">03 / building</p>
-        <h2>things i'm making.</h2>
+        <h2>things i'm making</h2>
 
-        <article class="project">
-          <div class="project-heading">
-            <h3>barnatlas</h3>
-            <span class="status">in progress</span>
-          </div>
-          <p>
-            a project for discovering hockey rinks,
-            sharing experiences, and keeping track
-            of places visited.
-          </p>
-        </article>
-      </section>
-
-      <section id="books">
-        <p class="section-number">04 / bookshelf</p>
-        <h2>between the pages.</h2>
-        <p>a little collection of books that have stayed with me.</p>
-
-        <div class="book-list">
-          <div class="book">
-            <span>east of eden</span>
-            <span>john steinbeck</span>
-          </div>
-          <div class="book">
-            <span>the picture of dorian gray</span>
-            <span>oscar wilde</span>
-          </div>
-        </div>
-
-        <p class="small-note">more books and reading notes to come.</p>
-      </section>
-
-      <section id="elsewhere">
-        <p class="section-number">05 / elsewhere</p>
-        <h2>outside of everything else.</h2>
-
-        <div class="elsewhere-grid">
-          <article class="elsewhere-item">
-            <h3>on the ice</h3>
-            <p>hockey, the anaheim ducks, and everything in between.</p>
-          </article>
-
-          <article class="elsewhere-item">
-            <h3>baseball season</h3>
-            <p>forever rooting for the dodgers.</p>
-          </article>
-
-          <article class="elsewhere-item">
-            <h3>japanese pop culture</h3>
-            <p>doraemon, akb48, and watanabe mayu.</p>
-          </article>
-
-          <article class="elsewhere-item">
-            <h3>little comforts</h3>
-            <p>good coffee, energy drinks, and açaí bowls.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact">
-        <p class="section-number">06 / contact</p>
-        <h2>say hello.</h2>
         <p>
-          always happy to talk about math,
-          books, hockey, or interesting ideas.
+          <strong>barnatlas</strong>
+          <span class="quiet">(in progress)</span>
+          — a little home for discovering hockey rinks,
+          sharing experiences, and keeping track
+          of places visited.
+        </p>
+      </section>
+
+
+      <!-- BOOKS -->
+      <section id="books">
+        <h2>between the pages</h2>
+
+        <p>
+          <em>east of eden</em> by john steinbeck,
+          and <em>the picture of dorian gray</em>
+          by oscar wilde.
+        </p>
+      </section>
+
+
+      <!-- ELSEWHERE -->
+      <section id="elsewhere">
+        <h2>elsewhere</h2>
+
+        <p>
+          hockey, japanese pop culture,
+          baseball season, and little comforts.
         </p>
 
-        <div class="social-links">
-          <a href="https://github.com/minhachung"
-             target="_blank" rel="noopener noreferrer">github ↗</a>
-          <!-- Add your LinkedIn URL here when ready -->
-        </div>
+        <a href="https://github.com/minhachung"
+           target="_blank"
+           rel="noopener noreferrer">
+          github ↗
+        </a>
       </section>
+
     </main>
 
+
+    <!-- FOOTER -->
     <footer>
-      <span>© minha chung</span>
-      <span>an ongoing collection.</span>
+      © minha chung · an ongoing collection.
     </footer>
+
   </div>
+
 </body>
 </html>
+
 
