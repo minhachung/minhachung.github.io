@@ -1,0 +1,309 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap');
+
+:root {
+  --cream: #f8f7f3;
+  --blue: #536d80;
+  --dark: #344b5c;
+  --muted: #8294a0;
+  --light-blue: #e7edf1;
+  --blush: #f1eae7;
+  --line: #dce2e4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--dark);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar,
+main,
+footer {
+  width: min(850px, 88%);
+  margin: auto;
+}
+
+/* NAVIGATION */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 0;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.nav-links a:hover {
+  color: var(--dark);
+}
+
+/* TYPOGRAPHY */
+
+h1, h2, h3 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: clamp(50px, 8vw, 85px);
+  line-height: 1.2;
+  margin: 15px 0 30px;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 0 0 25px;
+}
+
+h3 {
+  font-size: 23px;
+  margin: 0 0 12px;
+}
+
+p {
+  max-width: 630px;
+  color: var(--blue);
+}
+
+.eyebrow,
+.section-number {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+}
+
+.small-note {
+  margin-top: 28px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* HOME */
+
+.hero {
+  padding: 125px 0 160px;
+}
+
+.intro {
+  font-size: 16px;
+  max-width: 550px;
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 25px;
+  color: var(--blue);
+  font-size: 13px;
+  border-bottom: 1px solid var(--line);
+}
+
+/* SECTIONS */
+
+section {
+  border-top: 1px solid var(--line);
+  padding: 90px 0;
+}
+
+.section-number {
+  margin-bottom: 28px;
+}
+
+/* RESEARCH */
+
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 35px;
+}
+
+.interest-card {
+  background: var(--light-blue);
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.interest-card h3 {
+  font-size: 21px;
+}
+
+.interest-card p {
+  font-size: 12px;
+}
+
+/* PROJECTS */
+
+.project {
+  padding: 30px;
+  background: var(--light-blue);
+  border-radius: 5px;
+}
+
+.project-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.status {
+  font-size: 11px;
+  color: var(--blue);
+  background: var(--cream);
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+/* BOOKS */
+
+.book-list {
+  margin-top: 30px;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.book span:last-child {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* ELSEWHERE */
+
+.elsewhere-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.elsewhere-item {
+  padding: 25px;
+  background: var(--light-blue);
+  border-radius: 5px;
+}
+
+.elsewhere-item:nth-child(even) {
+  background: var(--blush);
+}
+
+.elsewhere-item p {
+  font-size: 12px;
+}
+
+/* LINKS & FOOTER */
+
+.social-links {
+  display: flex;
+  gap: 25px;
+  margin-top: 25px;
+  color: var(--blue);
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 35px 0 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* SUBTLE INTERACTIONS */
+
+.interest-card,
+.project,
+.elsewhere-item {
+  transition: transform 0.25s ease;
+}
+
+.interest-card:hover,
+.project:hover,
+.elsewhere-item:hover {
+  transform: translateY(-3px);
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .hero {
+    padding: 90px 0 110px;
+  }
+
+  section {
+    padding: 65px 0;
+  }
+
+  .interest-grid,
+  .elsewhere-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .book {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .interest-card,
+  .project,
+  .elsewhere-item {
+    transition: none;
+  }
+}
